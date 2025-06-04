@@ -48,18 +48,18 @@ const ServicesSection = () => {
 
         {/* Main Offer Card */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Card className="bg-gradient-to-r from-accent-blue/10 to-accent-green/10 border-accent-blue/20">
-            <CardContent className="p-8 text-center">
+          <Card className="bg-dark-surface-light border-accent-blue/30">
+            <CardContent className="p-6 md:p-8 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
                 Septic Designs Starting at $500
               </h3>
-              <p className="text-lg text-text-muted mb-6">
-                Includes a Free site visit, Site testing, and Septic design
+              <p className="text-lg text-white mb-6">
+                Includes a free site visit, site testing, and septic design
               </p>
               <Button 
                 onClick={scrollToContact}
                 size="lg"
-                className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold px-8 py-3"
+                className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold px-6 md:px-8 py-3 w-full sm:w-auto"
               >
                 Request Your Free Site Visit
               </Button>
@@ -68,7 +68,7 @@ const ServicesSection = () => {
         </div>
 
         {/* Features Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => (
             <Card key={index} className="bg-dark-surface-light border-dark-surface hover:border-accent-blue/30 transition-all">
               <CardContent className="p-6 text-center">

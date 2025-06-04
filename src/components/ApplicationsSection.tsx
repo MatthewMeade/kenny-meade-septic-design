@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, FileText, ExternalLink } from 'lucide-react';
+import { Download, FileText } from 'lucide-react';
 
 const ApplicationsSection = () => {
   const applications = [
@@ -68,7 +68,6 @@ const ApplicationsSection = () => {
                       >
                         <Download className="w-4 h-4" />
                         <span>Download</span>
-                        <ExternalLink className="w-4 h-4" />
                       </a>
                     </Button>
                   </div>

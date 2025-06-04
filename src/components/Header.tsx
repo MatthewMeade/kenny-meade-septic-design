@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail } from 'lucide-react';
+import { Phone } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +69,7 @@ const Header = () => {
           </nav>
 
           {/* Contact Info & CTA */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-2 md:space-x-4">
             <div className="hidden lg:flex items-center space-x-4 text-sm">
               <a href="tel:7092147335" className="flex items-center space-x-2 text-text-muted hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
@@ -79,7 +79,7 @@ const Header = () => {
             
             <Button 
               onClick={() => scrollToSection('contact')}
-              className="bg-accent-blue hover:bg-accent-blue/90 text-white font-medium px-4 py-2 rounded-md transition-all"
+              className="bg-accent-blue hover:bg-accent-blue/90 text-white font-medium px-3 md:px-4 py-2 rounded-md transition-all text-sm md:text-base"
             >
               Get Quote
             </Button>
