@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download, FileText } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 const ApplicationsSection = () => {
   const applications = [
@@ -38,8 +38,8 @@ const ApplicationsSection = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {applications.map((app, index) => (
               <Card key={index} className="bg-dark-surface border-dark-surface-light hover:border-accent-blue/30 transition-all group">
-                <CardContent className="p-6">
-                  <div className="text-center space-y-4">
+                <CardContent className="p-6 flex flex-col h-full">
+                  <div className="text-center space-y-4 flex-grow">
                     <div className="flex justify-center">
                       <div className="w-12 h-12 bg-accent-blue/10 rounded-lg flex items-center justify-center group-hover:bg-accent-blue/20 transition-all">
                         <FileText className="w-6 h-6 text-accent-blue" />
@@ -54,23 +54,21 @@ const ApplicationsSection = () => {
                         {app.description}
                       </p>
                     </div>
-
-                    <Button 
-                      asChild
-                      variant="outline"
-                      className="w-full border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white transition-all"
-                    >
-                      <a 
-                        href={app.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center space-x-2"
-                      >
-                        <Download className="w-4 h-4" />
-                        <span>Download</span>
-                      </a>
-                    </Button>
                   </div>
+
+                  <Button 
+                    asChild
+                    className="w-full bg-accent-blue hover:bg-accent-blue/90 text-white font-medium transition-all mt-auto"
+                  >
+                    <a 
+                      href={app.url} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center"
+                    >
+                      Download
+                    </a>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
@@ -80,9 +78,8 @@ const ApplicationsSection = () => {
             <Card className="bg-dark-surface-light border-accent-green/20">
               <CardContent className="p-6">
                 <p className="text-text-muted">
-                  <strong className="text-white">Need help with applications?</strong> 
-                  <br className="md:hidden" />
-                  For a fee, I can act as your agent and submit completed forms along with all required documents to Service NL.
+                  <strong className="text-white">Need help with applications?</strong>
+                  {' '}For a fee, I can act as your agent and submit completed forms along with all required documents to Service NL.
                 </p>
               </CardContent>
             </Card>

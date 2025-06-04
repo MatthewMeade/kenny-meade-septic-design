@@ -63,21 +63,21 @@ const AboutSection = () => {
             <CardContent className="p-8">
               <div className="prose prose-invert max-w-none">
                 <p className="text-text-muted leading-relaxed mb-6">
-                  With over 15 years of specialized experience in septic design, Kenny Meade 
-                  has established himself as Southwest Newfoundland's trusted septic design expert. 
-                  Our deep understanding of local soil conditions, regulations, and environmental 
+                  With over 15 years of specialized experience in septic design, I have 
+                  established myself as Southwest Newfoundland's trusted septic design expert. 
+                  My deep understanding of local soil conditions, regulations, and environmental 
                   factors ensures your septic system is designed correctly the first time.
                 </p>
                 
                 <p className="text-text-muted leading-relaxed mb-6">
-                  We work closely with Service NL and local authorities to ensure all designs 
+                  I work closely with Service NL to ensure all designs 
                   meet current standards and regulations. Whether you're building a new home, 
-                  replacing a failing system, or need a design for land development, we provide 
+                  replacing a failing system, or need a design for land development, I provide 
                   professional, reliable service that homeowners and contractors trust.
                 </p>
 
                 <div className="bg-dark-surface-light p-6 rounded-lg">
-                  <h4 className="text-white font-semibold mb-3">Our Commitment to You:</h4>
+                  <h4 className="text-white font-semibold mb-3">My Commitment to You:</h4>
                   <ul className="space-y-2 text-text-muted">
                     <li>• Thorough site evaluation and soil testing</li>
                     <li>• Designs that meet all provincial regulations</li>

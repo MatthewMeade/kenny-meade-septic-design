@@ -1,10 +1,17 @@
 
 import { Button } from '@/components/ui/button';
-import { Phone, MapPin, CheckCircle } from 'lucide-react';
+import { Phone, MapPin, CheckCircle, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToContact = () => {
     const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const scrollToServices = () => {
+    const element = document.getElementById('services');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -79,6 +86,18 @@ const HeroSection = () => {
             </Button>
           </div>
         </div>
+      </div>
+
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <Button
+          onClick={scrollToServices}
+          variant="ghost"
+          size="sm"
+          className="text-white hover:text-accent-blue transition-colors"
+        >
+          <ChevronDown className="w-6 h-6" />
+        </Button>
       </div>
     </section>
   );
