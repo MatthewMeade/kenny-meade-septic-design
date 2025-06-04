@@ -1,0 +1,97 @@
+
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { Download, FileText, ExternalLink } from 'lucide-react';
+
+const ApplicationsSection = () => {
+  const applications = [
+    {
+      title: "Water and Sewage Application",
+      description: "Required for new septic system installations",
+      url: "https://www.gov.nl.ca/dgsnl/files/forms-pdf-application-to-develop-land-c.pdf"
+    },
+    {
+      title: "Protected Roads Application",
+      description: "For properties within 400m of Trans Canada Highway",
+      url: "https://www.gov.nl.ca/dgsnl/files/forms-pdf-preliminaryappltodevland-web.pdf"
+    },
+    {
+      title: "Municipal Approval Form",
+      description: "Local municipal approval documentation",
+      url: "/MunicipalApprovalForm.pdf"
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-dark-bg">
+      <div className="container-max section-padding">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center space-y-6 mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-white">
+              Application Download Links
+            </h2>
+            <p className="text-lg text-text-muted">
+              Important forms and applications you may need for your septic design project
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {applications.map((app, index) => (
+              <Card key={index} className="bg-dark-surface border-dark-surface-light hover:border-accent-blue/30 transition-all group">
+                <CardContent className="p-6">
+                  <div className="text-center space-y-4">
+                    <div className="flex justify-center">
+                      <div className="w-12 h-12 bg-accent-blue/10 rounded-lg flex items-center justify-center group-hover:bg-accent-blue/20 transition-all">
+                        <FileText className="w-6 h-6 text-accent-blue" />
+                      </div>
+                    </div>
+                    
+                    <div>
+                      <h3 className="text-lg font-semibold text-white mb-2">
+                        {app.title}
+                      </h3>
+                      <p className="text-text-muted text-sm mb-4">
+                        {app.description}
+                      </p>
+                    </div>
+
+                    <Button 
+                      asChild
+                      variant="outline"
+                      className="w-full border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white transition-all"
+                    >
+                      <a 
+                        href={app.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center space-x-2"
+                      >
+                        <Download className="w-4 h-4" />
+                        <span>Download</span>
+                        <ExternalLink className="w-4 h-4" />
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="mt-12 text-center">
+            <Card className="bg-dark-surface-light border-accent-green/20">
+              <CardContent className="p-6">
+                <p className="text-text-muted">
+                  <strong className="text-white">Need help with applications?</strong> 
+                  <br className="md:hidden" />
+                  For a fee, I can act as your agent and submit completed forms along with all required documents to Service NL.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ApplicationsSection;
