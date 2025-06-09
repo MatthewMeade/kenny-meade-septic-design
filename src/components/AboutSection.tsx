@@ -1,28 +1,23 @@
 
 import { Card, CardContent } from '@/components/ui/card';
-import { Award, Users, MapPin, Clock } from 'lucide-react';
+import { Award, Users, MapPin } from 'lucide-react';
 
 const AboutSection = () => {
-  const stats = [
+  const credentials = [
     {
       icon: <Award className="w-8 h-8 text-accent-blue" />,
-      number: "15+",
-      label: "Years Experience"
+      title: "Licensed Professional",
+      description: "Certified septic design specialist"
     },
     {
       icon: <Users className="w-8 h-8 text-accent-blue" />,
-      number: "500+",
-      label: "Projects Completed"
+      title: "Proven Track Record",
+      description: "Hundreds of successful projects"
     },
     {
       icon: <MapPin className="w-8 h-8 text-accent-blue" />,
-      number: "100%",
-      label: "Local Focus"
-    },
-    {
-      icon: <Clock className="w-8 h-8 text-accent-blue" />,
-      number: "2 Week",
-      label: "Avg. Approval Time"
+      title: "Local Expertise",
+      description: "Deep knowledge of regional conditions"
     }
   ];
 
@@ -32,26 +27,26 @@ const AboutSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Why Choose Kenny Meade Septic Design?
+              Why Choose My Services?
             </h2>
             <p className="text-lg text-text-muted">
-              Trusted expertise and local knowledge you can count on
+              Local expertise and professional experience you can trust
             </p>
           </div>
 
-          {/* Stats Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {stats.map((stat, index) => (
+          {/* Credentials Grid */}
+          <div className="grid sm:grid-cols-3 gap-6 mb-12">
+            {credentials.map((credential, index) => (
               <Card key={index} className="bg-dark-surface border-dark-surface-light text-center">
                 <CardContent className="p-6">
                   <div className="flex justify-center mb-3">
-                    {stat.icon}
+                    {credential.icon}
                   </div>
-                  <div className="text-2xl font-bold text-white mb-1">
-                    {stat.number}
+                  <div className="text-lg font-semibold text-white mb-1">
+                    {credential.title}
                   </div>
                   <div className="text-text-muted text-sm">
-                    {stat.label}
+                    {credential.description}
                   </div>
                 </CardContent>
               </Card>
@@ -63,27 +58,25 @@ const AboutSection = () => {
             <CardContent className="p-8">
               <div className="prose prose-invert max-w-none">
                 <p className="text-text-muted leading-relaxed mb-6">
-                  With over 15 years of specialized experience in septic design, I have 
-                  established myself as Southwest Newfoundland's trusted septic design expert. 
-                  My deep understanding of local soil conditions, regulations, and environmental 
-                  factors ensures your septic system is designed correctly the first time.
+                  I've been designing septic systems in Southwest Newfoundland for over 15 years. 
+                  My experience with local soil conditions, environmental factors, and regulatory 
+                  requirements means your system gets designed right the first time.
                 </p>
                 
                 <p className="text-text-muted leading-relaxed mb-6">
-                  I work closely with Service NL to ensure all designs 
-                  meet current standards and regulations. Whether you're building a new home, 
-                  replacing a failing system, or need a design for land development, I provide 
-                  professional, reliable service that homeowners and contractors trust.
+                  Whether you're building a new home, replacing a failing system, or developing 
+                  land, I provide the professional design and consultation services you need. 
+                  Every project gets my personal attention from initial site visit through final approval.
                 </p>
 
                 <div className="bg-dark-surface-light p-6 rounded-lg">
-                  <h4 className="text-white font-semibold mb-3">My Commitment to You:</h4>
+                  <h4 className="text-white font-semibold mb-3">What You Can Expect:</h4>
                   <ul className="space-y-2 text-text-muted">
-                    <li>• Thorough site evaluation and soil testing</li>
-                    <li>• Designs that meet all provincial regulations</li>
-                    <li>• Professional consultation throughout the process</li>
-                    <li>• Support with permit applications and inspections</li>
-                    <li>• Solutions for challenging or failing systems</li>
+                    <li>• Thorough site evaluation and professional soil testing</li>
+                    <li>• Custom designs that meet all current regulations</li>
+                    <li>• Clear communication throughout the entire process</li>
+                    <li>• Support with applications and regulatory submissions</li>
+                    <li>• Solutions for challenging sites and replacement systems</li>
                   </ul>
                 </div>
               </div>
