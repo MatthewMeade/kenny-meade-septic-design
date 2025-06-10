@@ -1,6 +1,6 @@
 
 import { Button } from '@/components/ui/button';
-import { Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Phone, MapPin, CheckCircle, ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -36,16 +36,32 @@ const HeroSection = () => {
             
             <div className="flex items-center justify-center space-x-2 text-text-muted">
               <MapPin className="w-5 h-5" />
-              <span className="text-lg">Southwest Newfoundland</span>
+              <span className="text-lg">Servicing Southwest Newfoundland</span>
             </div>
           </div>
 
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto leading-relaxed">
-            Professional septic system design and consultation
+            Over 15 years of septic design experience. 
             <br className="hidden md:block" />
-            for new builds and system replacements.
+            Specializing in new and replacement systems.
           </p>
+
+          {/* Key Benefits */}
+          <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="w-5 h-5 text-accent-green" />
+              <span className="text-white">Free Site Visits</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="w-5 h-5 text-accent-green" />
+              <span className="text-white">Professional Design</span>
+            </div>
+            <div className="flex items-center space-x-2">
+              <CheckCircle className="w-5 h-5 text-accent-green" />
+              <span className="text-white">Licensed & Experienced</span>
+            </div>
+          </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
@@ -54,7 +70,7 @@ const HeroSection = () => {
               size="lg"
               className="bg-accent-blue hover:bg-accent-blue/90 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg transition-all transform hover:scale-105 w-full sm:w-auto"
             >
-              Get Your Free Site Visit
+              Get Your Free Site Visit & Quote
             </Button>
             
             <Button 
@@ -65,7 +81,7 @@ const HeroSection = () => {
             >
               <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
                 <Phone className="w-5 h-5" />
-                <span>Call: 709-214-7335</span>
+                <span>Call Now: 709-214-7335</span>
               </a>
             </Button>
           </div>

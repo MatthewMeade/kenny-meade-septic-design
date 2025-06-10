@@ -1,6 +1,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
+import { FileText } from 'lucide-react';
 
 const ApplicationsSection = () => {
   const applications = [
@@ -27,10 +28,10 @@ const ApplicationsSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-6 mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-white">
-              Required Forms & Applications
+              Application Download Links
             </h2>
             <p className="text-lg text-text-muted">
-              Download the forms you may need for your septic design project
+              Important forms and applications you may need for your septic design project
             </p>
           </div>
 
@@ -39,6 +40,12 @@ const ApplicationsSection = () => {
               <Card key={index} className="bg-dark-surface border-dark-surface-light hover:border-accent-blue/30 transition-all group">
                 <CardContent className="p-6 flex flex-col h-full">
                   <div className="text-center space-y-4 flex-grow">
+                    <div className="flex justify-center">
+                      <div className="w-12 h-12 bg-accent-blue/10 rounded-lg flex items-center justify-center group-hover:bg-accent-blue/20 transition-all">
+                        <FileText className="w-6 h-6 text-accent-blue" />
+                      </div>
+                    </div>
+                    
                     <div>
                       <h3 className="text-lg font-semibold text-white mb-2">
                         {app.title}
@@ -59,7 +66,7 @@ const ApplicationsSection = () => {
                       rel="noopener noreferrer"
                       className="flex items-center justify-center"
                     >
-                      Download Form
+                      Download
                     </a>
                   </Button>
                 </CardContent>
