@@ -29,7 +29,7 @@ const ServicesSection = () => {
     },
     {
       icon: <Shield className="w-6 h-6 text-accent-green" />,
-      title: "15+ Years Experience",
+      title: "25+ Years Experience",
       description: "Licensed professional with extensive local knowledge"
     }
   ];

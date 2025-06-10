@@ -6,7 +6,7 @@ const AboutSection = () => {
   const stats = [
     {
       icon: <Award className="w-8 h-8 text-accent-blue" />,
-      number: "15+",
+      number: "25+",
       label: "Years Experience"
     },
     {
@@ -63,7 +63,7 @@ const AboutSection = () => {
             <CardContent className="p-8">
               <div className="prose prose-invert max-w-none">
                 <p className="text-text-muted leading-relaxed mb-6">
-                  With over 15 years of specialized experience in septic design, I have 
+                  With over 25 years of specialized experience in septic design, I have 
                   established myself as Southwest Newfoundland's trusted septic design expert. 
                   My deep understanding of local soil conditions, regulations, and environmental 
                   factors ensures your septic system is designed correctly the first time.

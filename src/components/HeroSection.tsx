@@ -40,9 +40,19 @@ const HeroSection = () => {
             </div>
           </div>
 
+          {/* Pricing Highlight */}
+          <div className="bg-dark-surface-light border border-accent-green/30 rounded-lg p-6 max-w-md mx-auto">
+            <div className="text-3xl md:text-4xl font-bold text-accent-green mb-2">
+              Starting at $500
+            </div>
+            <p className="text-white text-lg">
+              Includes free site visit, soil testing & septic design
+            </p>
+          </div>
+
           {/* Tagline */}
           <p className="text-xl md:text-2xl text-text-muted max-w-3xl mx-auto leading-relaxed">
-            Over 15 years of septic design experience. 
+            Over 25 years of septic design experience. 
             <br className="hidden md:block" />
             Specializing in new and replacement systems.
           </p>
@@ -74,10 +84,9 @@ const HeroSection = () => {
             </Button>
             
             <Button 
-              variant="outline"
               size="lg"
               asChild
-              className="border-accent-green text-accent-green hover:bg-accent-green hover:text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg transition-all w-full sm:w-auto"
+              className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg transition-all w-full sm:w-auto"
             >
               <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
                 <Phone className="w-5 h-5" />
