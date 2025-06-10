@@ -14,6 +14,7 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+  base: '/southwest-septic-modernize/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
