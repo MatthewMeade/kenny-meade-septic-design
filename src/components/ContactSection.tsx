@@ -1,35 +1,10 @@
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Phone, Mail, MapPin, Clock, MessageCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, MessageCircle, Smartphone } from 'lucide-react';
 
 const ContactSection = () => {
-  const contactInfo = [
-    {
-      icon: <Phone className="w-5 h-5 text-accent-blue" />,
-      label: "Phone",
-      value: "709-214-7335",
-      href: "tel:7092147335"
-    },
-    {
-      icon: <Mail className="w-5 h-5 text-accent-blue" />,
-      label: "Email",
-      value: "KennyDMeade@Gmail.com",
-      href: "mailto:KennyDMeade@Gmail.com"
-    },
-    {
-      icon: <MapPin className="w-5 h-5 text-accent-blue" />,
-      label: "Service Area",
-      value: "Southwest Newfoundland",
-      href: null
-    },
-    {
-      icon: <Clock className="w-5 h-5 text-accent-blue" />,
-      label: "Response Time",
-      value: "Within 24 hours",
-      href: null
-    }
-  ];
+
 
   return (
     <section id="contact" className="py-20 bg-dark-surface">
@@ -44,111 +19,109 @@ const ContactSection = () => {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Contact Information */}
-            <Card className="bg-dark-bg border-dark-surface">
-              <CardContent className="p-6 md:p-8">
-                <h3 className="text-xl font-semibold text-white mb-6">Get in Touch</h3>
-                
-                <div className="space-y-6">
-                  {contactInfo.map((info, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">
-                        {info.icon}
-                      </div>
-                      <div>
-                        <div className="text-sm text-text-muted mb-1">{info.label}</div>
-                        {info.href ? (
-                          <a 
-                            href={info.href}
-                            className="text-white hover:text-accent-blue transition-colors font-medium"
-                          >
-                            {info.value}
-                          </a>
-                        ) : (
-                          <div className="text-white font-medium">{info.value}</div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+          {/* Contact Actions */}
+          <div className="grid lg:grid-cols-3 gap-6">
+            {/* Facebook Messenger */}
+            <Card className="bg-dark-surface-light border-accent-blue/30">
+              <CardContent className="p-6 md:p-8 text-center flex flex-col h-full">
+                <MessageCircle className="w-12 h-12 text-accent-blue mx-auto mb-4" />
+                <h4 className="text-xl font-semibold text-white mb-3">
+                  Facebook
+                </h4>
+                <p className="text-text-muted mb-6 flex-grow">
+                  Contact me on Facebook Messenger
+                </p>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-accent-blue hover:bg-accent-blue/90 text-white font-semibold w-full mt-auto"
+                >
+                  <a
+                    href="https://m.me/kenny.meade.77"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2"
+                  >
+                    <MessageCircle className="w-5 h-5" />
+                    <span>Send Message</span>
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Phone Call */}
+            <Card className="bg-dark-surface-light border-accent-green/30">
+              <CardContent className="p-6 md:p-8 text-center flex flex-col h-full">
+                <Smartphone className="w-12 h-12 text-accent-green mx-auto mb-4" />
+                <h4 className="text-xl font-semibold text-white mb-3">
+                  Call or Text
+                </h4>
+                <a href="sms:7092147335" className="flex items-center justify-center space-x-2">
+
+                  <p className="text-text-muted mb-6 flex-grow">
+                    1-709-214-733
+                  </p>
+                </a>
+
+                <div className='grid grid-cols-2 gap-4 mt-auto'>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold "
+                  >
+                    <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
+                      <Phone className="w-5 h-5" />
+                      <span>Call</span>
+                    </a>
+
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold "
+                  >
+                    <a href="sms:7092147335" className="flex items-center justify-center space-x-2">
+                      <Smartphone className="w-5 h-5" />
+                      <span> Text</span>
+                    </a>
+
+                  </Button>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Contact Actions */}
-            <div className="space-y-6">
-              {/* Facebook Messenger */}
-              <Card className="bg-dark-surface-light border-accent-blue/30">
-                <CardContent className="p-6 md:p-8 text-center">
-                  <MessageCircle className="w-12 h-12 text-accent-blue mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold text-white mb-3">
-                    Message Me on Facebook
-                  </h4>
-                  <p className="text-text-muted mb-6">
-                    Get instant responses to your questions via Facebook Messenger
-                  </p>
-                  <Button 
-                    asChild
-                    size="lg"
-                    className="bg-accent-blue hover:bg-accent-blue/90 text-white font-semibold w-full"
+            {/* Email */}
+            <Card className="bg-dark-surface-light border-accent-blue/30">
+              <CardContent className="p-6 md:p-8 text-center flex flex-col h-full">
+                <Mail className="w-12 h-12 text-accent-blue mx-auto mb-4" />
+                <h4 className="text-xl font-semibold text-white mb-3">
+                  Send me an email
+                </h4>
+                <p className="text-text-muted mb-6 flex-grow">
+                  <a
+                    href="mailto:KennyDMeade@Gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2"
+                  >KennyDMeade@gmail.com</a>
+                </p>
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-accent-blue hover:bg-accent-blue/90 text-white font-semibold w-full mt-auto"
+                >
+                  <a
+                    href="mailto:KennyDMeade@Gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center space-x-2"
                   >
-                    <a 
-                      href="https://m.me/kenny.meade.septic" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center justify-center space-x-2"
-                    >
-                      <MessageCircle className="w-5 h-5" />
-                      <span>Send Message</span>
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              {/* Phone Call */}
-              <Card className="bg-dark-surface-light border-accent-green/30">
-                <CardContent className="p-6 md:p-8 text-center">
-                  <Phone className="w-12 h-12 text-accent-green mx-auto mb-4" />
-                  <h4 className="text-xl font-semibold text-white mb-3">
-                    Need immediate assistance?
-                  </h4>
-                  <p className="text-text-muted mb-6">
-                    Call directly for urgent inquiries or immediate consultation
-                  </p>
-                  <Button 
-                    asChild
-                    size="lg"
-                    className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold w-full"
-                  >
-                    <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
-                      <Phone className="w-5 h-5" />
-                      <span>Call Now: 709-214-7335</span>
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-
-              {/* Email */}
-              <Card className="bg-dark-bg border-dark-surface">
-                <CardContent className="p-6 md:p-8 text-center">
-                  <Mail className="w-12 h-12 text-text-muted mx-auto mb-4" />
-                  <h4 className="text-lg font-semibold text-white mb-3">
-                    Email for Detailed Inquiries
-                  </h4>
-                  <Button 
-                    asChild
-                    variant="outline"
-                    size="lg"
-                    className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white font-semibold w-full"
-                  >
-                    <a href="mailto:KennyDMeade@Gmail.com" className="flex items-center justify-center space-x-2">
-                      <Mail className="w-5 h-5" />
-                      <span>Send Email</span>
-                    </a>
-                  </Button>
-                </CardContent>
-              </Card>
-            </div>
+                    <Mail className="w-5 h-5" />
+                    <span>Send Email</span>
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </div>
