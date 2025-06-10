@@ -43,9 +43,8 @@ const Footer = () => {
           <div className="flex justify-start lg:justify-end">
             <Button
               onClick={scrollToTop}
-              variant="outline"
               size="sm"
-              className="border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white"
+              className="bg-accent-blue hover:bg-accent-blue/90 text-white font-semibold"
             >
               <ArrowUp className="w-4 h-4 mr-2" />
               Back to Top
