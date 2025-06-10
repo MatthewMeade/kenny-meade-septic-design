@@ -1,5 +1,4 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Router, Route } from "preact-router";
 import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
