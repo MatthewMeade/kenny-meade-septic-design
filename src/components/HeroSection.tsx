@@ -31,7 +31,7 @@ const HeroSection = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               <span className="text-white">Kenny Meade</span>
               <br />
-              <span className="text-gradient font-poppins">Septic Design</span>
+              <span className="text-gradient text-bold">Septic Design</span>
             </h1>
             
             <div className="flex items-center justify-center space-x-2 text-text-muted">

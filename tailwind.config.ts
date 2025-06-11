@@ -111,8 +111,7 @@ export default {
 				'fade-in': 'fade-in 0.6s ease-out'
 			},
 			fontFamily: {
-				'inter': ['Inter', 'sans-serif'],
-				'poppins': ['Poppins', 'sans-serif'],
+				'inter': ['Arial', '-apple-system', 'BlinkMacSystemFont', 'sans-serif', 'sans-serif'],
 			}
 		}
 	},
