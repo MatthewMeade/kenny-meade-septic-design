@@ -16,7 +16,7 @@ const ApplicationsSection = () => {
       url: "https://www.gov.nl.ca/dgsnl/files/forms-pdf-preliminaryappltodevland-web.pdf"
     },
     {
-      title: "Municipal Approval Form",
+      title: (<span>Municipal Approval<br />Form</span>),
       description: "Local municipal approval documentation",
       url: "/MunicipalApprovalForm.pdf"
     }
