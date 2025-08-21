@@ -59,7 +59,7 @@ const ContactSection = () => {
                 <a href="sms:7092147335" className="flex items-center justify-center space-x-2">
 
                   <p className="text-text-muted mb-6 flex-grow">
-                    1-709-214-733
+                    1-709-214-7335
                   </p>
                 </a>
 
