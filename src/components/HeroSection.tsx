@@ -78,9 +78,9 @@ const HeroSection = () => {
                 asChild
                 className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold px-6 md:px-8 py-3 md:py-4 rounded-lg text-base md:text-lg transition-all w-full sm:w-[350px]"
               >
-                <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
+                <a href="tel:7093861970" className="flex items-center justify-center space-x-2">
                   <Phone className="w-5 h-5" />
-                  <span>Call Now: 709-214-7335</span>
+                  <span>Call Now: 709-386-1970</span>
                 </a>
               </Button>
             </div>

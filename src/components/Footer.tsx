@@ -31,11 +31,11 @@ const Footer = () => {
               <span>KennyDMeade@Gmail.com</span>
             </a>
             <a 
-              href="tel:7092147335"
+              href="tel:7093861970"
               className="flex items-center space-x-3 text-text-muted hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4" />
-              <span>709-214-7335</span>
+              <span>709-386-1970</span>
             </a>
           </div>
 

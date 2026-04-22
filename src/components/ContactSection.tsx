@@ -56,10 +56,10 @@ const ContactSection = () => {
                 <h4 className="text-xl font-semibold text-white mb-3">
                   Call or Text
                 </h4>
-                <a href="sms:7092147335" className="flex items-center justify-center space-x-2">
+                <a href="sms:7093861970" className="flex items-center justify-center space-x-2">
 
                   <p className="text-text-muted mb-6 flex-grow">
-                    1-709-214-7335
+                    1-709-386-1970
                   </p>
                 </a>
 
@@ -69,7 +69,7 @@ const ContactSection = () => {
                     size="lg"
                     className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold "
                   >
-                    <a href="tel:7092147335" className="flex items-center justify-center space-x-2">
+                    <a href="tel:7093861970" className="flex items-center justify-center space-x-2">
                       <Phone className="w-5 h-5" />
                       <span>Call</span>
                     </a>
@@ -80,7 +80,7 @@ const ContactSection = () => {
                     size="lg"
                     className="bg-accent-green hover:bg-accent-green/90 text-white font-semibold "
                   >
-                    <a href="sms:7092147335" className="flex items-center justify-center space-x-2">
+                    <a href="sms:7093861970" className="flex items-center justify-center space-x-2">
                       <Smartphone className="w-5 h-5" />
                       <span> Text</span>
                     </a>

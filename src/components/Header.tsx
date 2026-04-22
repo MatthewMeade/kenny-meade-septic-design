@@ -71,9 +71,9 @@ const Header = () => {
           {/* Contact Info & CTA */}
           <div className="flex items-center space-x-2 md:space-x-4">
             <div className="hidden lg:flex items-center space-x-4 text-sm">
-              <a href="tel:7092147335" className="flex items-center space-x-2 text-text-muted hover:text-white transition-colors">
+              <a href="tel:7093861970" className="flex items-center space-x-2 text-text-muted hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
-                <span>709-214-7335</span>
+                <span>709-386-1970</span>
               </a>
             </div>
             
